@@ -1,34 +1,4 @@
 
-// 3. Inside the `burgers_controller.js` file, import the following:
-
-// * Express
-// * `burger.js`
-
-// 4. Create the `router` for the app, and export the `router` at the end of your file.
-
-
-// var burger = "burger";
-
-// router.get("/", function (req,res){
-//     var queryString = "SELECT * FROM burger ;"
-//     connection.query(queryString, function (err, result){
-//         if (err) {
-//          throw err;
-//         }
-//         res.render("index", { burgers: result });
-//     });
-// }) 
-
-// const getAllBurgers = function(){
-
-// };
-
-// const addBurger = function(){
-
-// };
-
-// const updateBurger 
-
 var express = require("express");
 
 var router = express.Router();

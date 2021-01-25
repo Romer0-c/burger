@@ -1,16 +1,51 @@
-<ul>
+<div id="image"><img class="cute-burger" class="img-responsive" class="center.block" src="/assets/img/Cute-Summer-Burger.jpg"></div>
+<br>
+<h1 class="text-center">Devour Thy Burger</h1>
+<br>
+
+
+<div class="row" class="center">
+    <div class="col-xs-6">
+        <ul>
+            {{#each burgers}}
+                {{#unless devoured}}
+                    <div class="row">
+                        <li class="uneaten">
+                            {{id}}. {{burger_name}}
+                        </li>
+                        <button class="devour-button btn btn-sm btn-light" data-id="{{id}}" data-state="false">Devour Me!</button>
+                    </div>
+                {{/unless}}
+            {{/each}}
+        </ul>
+        
+    </div>
+    <div class="col-xs-6">
+        {{#each burgers}}
+            {{#if devoured}}
+                <form>
+                    <label for="{{burger_name}}"></label>
+                    <input class="devoured" type="text" placeholder="{{id}}. {{burger_name}}">
+                </form>
+            {{/if}}
+        {{/each}}
+    </div>
+</div>
+
+
+{{!-- <ul>
   {{#each burgers}}
    {{#unless devoured}}
   <li>{{this.burger_name}}</li>
    {{/unless}}
   {{/each}}
-</ul>
+</ul> --}}
 
-<h2>Add a Burger</h2>
-<form class="create-burger">
+
+<form class="text center create-burger">
 
   {{!-- <div class="form-burger"> --}}
-    <label for="burger">Burger:</label>
+    <label for="burger">Add a Burger Here:</label>
     <input type="text" id="burger-input" name="burger_name">
   {{!-- </div> --}}
 {{!-- 

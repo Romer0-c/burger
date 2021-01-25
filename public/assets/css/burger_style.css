@@ -1,20 +1,44 @@
+body {
+    padding:40px;
+    background-color: #fedc7B;
+}
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: #BFDC8C;
   }
-  
-  .label {
+.cute-burger {
+    height: 300px;
+    width: 300px;
+  }
+
+#image {
+  text-align: center;
+  }
+
+.label {
     font-weight: bold;
   }
   
-  .create-update-form {
+.create-update-form {
     padding: 5px;
     margin: 5px;
     background: aqua;
   }
   
-  .form-group {
+.form-group {
     margin-bottom: 5px;
   }
   
+.row {
+    margin-bottom: 10px;
+  }   
+
+.devour-button {
+    margin-left: 20px;
+    max-height: 30px;
+    }
+
+.devoured {
+      margin: 0;
+  }
